@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome To Our Site</title>
+  <!-- this is navbar javascript -->
+  <script>
+    function togglebar() {
+      var x = document.getElementById("menu");
+
+      if (x.style.display == "grid") {
+        x.style.display = "none";
+      }
+      else {
+        x.style.display = "grid";
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="input.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="header"> <img src="logo.png" alt="Code Geek">
+    <p class="head">code geek</p>
+  </div>
+
+
+  </form>
+  <div class="menubar">
+    <div class="menu">
+      <span onclick="togglebar()">&#9776;</span>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="course.html">Cource</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="contect.html">Contect</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <div class="main bg-blue-300 h-screen w-auto px-10 relative bottom-1">
+      <h1 class="font-extrabold font-mono text-6xl pt-56">Learn Code.</h1>
+      <p class="paragraph w-2/4 py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit
+        repudiandae quae nesciunt, expedita necessitatibus, nobis ipsa ipsam cupiditate fuga dolores ex dolor aliquid
+        minus doloribus obcaecati! Officia, tempore reprehenderit?</p>
+      <div class="py-10">
+        <button
+          class="bg-blue-400 py-1 px-6 rounded-3xl mr-4 hover:bg-blue-900 outline  hover:text-white hover:outline-blue-100 "><a
+            href="index.html">Let's
+            Go</a></button>
+        <button
+          class="bg-blue-400 py-1 px-6 rounded-3xl mr-4 hover:bg-blue-900 outline  hover:text-white hover:outline-blue-100 "><a
+            href="help.html">Learn
+            more</a></button>
+      </div>
+    </div>
+
+    <div class="photo"><img src="pic.png" class="flex float-right h-[50em]" style="position: relative; bottom: 52em;"
+        alt="Programing✌️"></div>
+  </main>
+
+  
+</body>
+
+</html>
